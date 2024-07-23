@@ -1,0 +1,149 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .cart-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+
+  }
+  
+  .promo-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .promo-code input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .promo-code button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .summary-details {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .summary-details p {
+    margin: 10px 0;
+  }
+  
+  .total-amount {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .continue-shopping {
+    background-color: #ccc;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .page-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .page-button.active {
+    background-color: black;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-body {
+      flex-direction: column;
+    }
+  
+    .cart-summary {
+      margin-top: 20px;
+    }
+  
+    .promo-code {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .promo-code input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .cart-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .pagination {
+      width: 100%;
+      display: flex; 
+      align-items: center;
+    }
+  }
+  
